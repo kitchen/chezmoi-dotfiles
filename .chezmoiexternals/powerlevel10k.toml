@@ -1,0 +1,5 @@
+[".config/zsh_custom/themes/powerlevel10k"]
+type = "archive"
+url = "https://github.com/romkatv/powerlevel10k/archive/v1.15.0.tar.gz"
+exact = true
+stripComponents = 1
