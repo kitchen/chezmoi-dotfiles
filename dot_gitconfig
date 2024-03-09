@@ -1,0 +1,16 @@
+[user]
+	name = Jeremy Kitchen
+	email = kitchen@kitchen.io
+
+[pull]
+	rebase = true
+
+# *really* clever hack to change the default branch to `main`:
+# https://stackoverflow.com/a/50880622
+[init]
+	templateDir = ~/.config/git/template
+
+[include]
+	path = ~/.config/git/squarespace.config
+[core]
+	excludesfile = /Users/kitchen/.config/git/ignore
