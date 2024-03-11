@@ -1,6 +1,7 @@
 {{ if eq .chezmoi.osRelease.id "ubuntu" -}}
 #!/bin/sh
 
+sudo apt install software-properties-common
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
 sudo apt -y install \
@@ -13,7 +14,6 @@ sudo apt -y install \
   neovim \
   ripgrep \
   shellcheck \
-  software-properties-common \
   thefuck \
   tmux \
   zsh
