@@ -23,11 +23,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --profile m
 
 cargo install zoxide
 
+# TODO: install lazygit
+
 
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
 
-brew bundle
+brew bundle --file $HOME/.config/homebrew/Brewfile
 
 {{ else }}
 #!/bin/sh
