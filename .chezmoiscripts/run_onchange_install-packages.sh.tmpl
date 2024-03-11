@@ -1,0 +1,32 @@
+{{ if eq .chezmoi.osRelease.id "ubuntu" -}}
+#!/bin/sh
+
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt -y install \
+  build-essential \
+  direnv \
+  editorconfig \
+  fd-find \
+  fzf \
+  lsd \
+  neovim \
+  ripgrep \
+  shellcheck \
+  software-properties-common \
+  thefuck \
+  tmux \
+  zsh
+
+{{ else if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+
+brew bundle
+
+{{ else }}
+#!/bin/sh
+
+echo "this os and release id not supported by installer script!"
+echo "{{ .chezmoi.os }} {{ .chezmoi.osRelease.id }}"
+
+{{ end }}
