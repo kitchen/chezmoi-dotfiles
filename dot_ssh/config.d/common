@@ -22,3 +22,6 @@ Host okoppe
 
 Host nakashibetsu
   HostName nakashibetsu.kitchen.io
+
+Host biei
+  HostName biei.kitchen.io
