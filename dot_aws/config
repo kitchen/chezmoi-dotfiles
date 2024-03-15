@@ -1,2 +1,4 @@
 [kitchen]
 region = us-west-2
+[profile kitchen]
+region = us-west-2
