@@ -25,3 +25,6 @@ Host nakashibetsu
 
 Host biei
   HostName biei.kitchen.io
+
+Host shihoro
+  HostName shihoro.kitchen.io
